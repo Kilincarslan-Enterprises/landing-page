@@ -37,7 +37,7 @@ export default function Divisions() {
       name: 'DMK Creations',
       tagline: 'Content Studio',
       description: 'Full-service AI & real content creation studio – for brands, creators and enterprises',
-      url: '#',
+      url: 'https://dmkcreations.com',
       gradient: 'from-purple-500 to-pink-600',
       glowColor: 'rgba(124, 58, 237, 0.4)',
     },
