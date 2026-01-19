@@ -1,22 +1,19 @@
-import Hero from './components/Hero';
-import About from './components/About';
-import Divisions from './components/Divisions';
-import Vision from './components/Vision';
-import Advisory from './components/Advisory';
-import Infrastructure from './components/Infrastructure';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Postiz from './pages/Postiz';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0F172A] text-white overflow-x-hidden">
-      <Hero />
-      <About />
-      <Divisions />
-      <Vision />
-      <Advisory />
-      <Infrastructure />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/postiz" element={<Postiz />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+      </Routes>
+    </Router>
   );
 }
 
